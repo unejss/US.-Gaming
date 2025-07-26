@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="logo.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"
+    />
+    <script defer src="js/main.js"></script>
+    <title>US. Gaming</title>
+    <style>
+      .oneft {
+        display: none;
+      }
+      .loader-main {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .loader-main .loader {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: inline-block;
+        border-top: 4px solid #fff;
+        border-right: 4px solid transparent;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+      }
+      .loader-main .loader::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border-bottom: 4px solid #ff3d00;
+        border-left: 4px solid transparent;
+      }
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .loader-rem {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body class="light-theme dark-theme">
+    <div class="loader-main">
+      <span class="loader"></span>
+    </div>
+    <div class="main_content">
+      <script src="loader.js"></script>
+      <header>
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div
+              class="header-inner d-flex justify-content-between align-items-center"
+            >
+              <div class="navbar-brand flex-shrink-0" href="#">
+                <img
+                  src="logo.png"
+                  alt="logo-image"
+                  id="logo"
+                  class="img-fluid"
+                />
+                <span id="US"><b>US. Gaming</b></span>
+              </div>
+              <div
+                class="header-content d-flex align-items-center justify-content-end"
+              >
+                <form class="d-flex justify-content-end align-items-center">
+                  <div class="search-icon">
+                    <input
+                      class="form-control"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                      value="This is US. Gaming Site. Enjoy your GAMING experiece here..."
+                      readonly
+                    />
+                  </div>
+                  <label class="switch flex-shrink-0 mb-0">
+                    <input id="checkbox" type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                </form>
+                <a href="#" class="profile"
+                  ><img
+                    src="img/youtube%20logo.jpg"
+                    alt="user-image"
+                    style="width: 30px; height: 30px"
+                  />Gaming Channel</a
+                >
+                <a href="./" target="_blank" class="notification"
+                  ><i class="fa fa-bell" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <button class="hamburger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </header>
+      <div class="nft-store">
+        <div class="container-fluid">
+          <div class="nft-store-inner d-flex">
+            <div class="menu-links">
+              <div style="position: sticky; top: 50px">
+                <ul>
+                  <li class="nav-item active">
+                    <a href="#" class="d-flex align-items-center nav-link"
+                      ><i class="fa fa-home" aria-hidden="true"></i>
+                      <span>Home</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="./games/index.html"
+                      target="_blank"
+                      class="d-flex align-items-center nav-link"
+                      ><i class="fa fa-gamepad" aria-hidden="true"></i>
+                      <span>Play Online</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="https://www.microsoft.com/en-in/store/top-free/games/pc"
+                      target="_blank"
+                      class="d-flex align-items-center nav-link"
+                      ><i class="fa fa-download" aria-hidden="true"></i>
+                      <span>Install</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="https://www.codecademy.com/learn/paths/create-video-games-with-phaser?utm_id=t_kwd-78890477494419:loc-1:ag_1262239970553794:cp_370314518:n_o:d_c&utm_source=bing&utm_medium=cpc&utm_campaign=ROW%20Career%20Path%3A%20Pro%20-%20Exact&utm_term=how%20to%20get%20started%20with%20game%20development&utm_content=game%20development"
+                      target="_blank"
+                      class="d-flex align-items-center nav-link"
+                      ><i class="fa fa-pencil" aria-hidden="true"></i>
+                      <span>Learn</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="https://store.steampowered.com/"
+                      class="d-flex align-items-center nav-link"
+                      ><i class="fa fa-steam" aria-hidden="true"></i>
+                      <span>Steam</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="https://www.amazon.co.uk/PC-Video-Games-Consoles-Accessories/b/?ie=UTF8&node=300703&ref_=nav_cs_video_games"
+                      target="_blank"
+                      class="d-flex align-items-center nav-link"
+                      ><i class="fa fa-amazon" aria-hidden="true"></i>
+                      <span>Purchased</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="./auth.html"
+                      class="d-flex align-items-center nav-link"
+                      ><i class="fa fa-sign-in" aria-hidden="true"></i>
+                      <span>Log In</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="nft-store-content">
+              <div class="nft-up-content">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div
+                      class="fire-bubble-art d-flex justify-content-between align-items-center"
+                    >
+                      <img
+                        src="img/forza%204.jpg"
+                        alt="fire-bubble-image"
+                        class="img-fluid fire-image fire-width"
+                      />
+                      <div class="fire-content fire-width">
+                        <h3 class="mb-0">
+                          <a href="https://www.xbox.com" target="_blank"
+                            ><img
+                              src="img/Xbox%20green%20logo.svg"
+                              alt="xbox" /></a
+                          ><br />
+                        </h3>
+                        <div class="fire-time d-flex justify-content-between">
+                          <div class="current-bid">
+                            <h4>Current Place</h4>
+                            <span>1-St Place</span>
+                          </div>
+                          <div class="auction">
+                            <h4>Region</h4>
+                            <span>Albania, Europe</span>
+                          </div>
+                          <span class="middle-line"></span>
+                        </div>
+                        <span class="fire-user"
+                          ><img
+                            src="img/XBox%20profile.png"
+                            alt="user-image"
+                            style="width: 40px; height: 40px"
+                          />
+                          Game Sage</span
+                        >
+                        <div class="d-flex fire-links">
+                          <a href="#" class="heart flex-shrink-0"
+                            ><i
+                              class="fa fa-heart-o"
+                              aria-hidden="true"
+                              onclick="Thanks()"
+                            ></i
+                          ></a>
+                          <div class="container">
+                            <div class="btna">
+                              <div class="btn">
+                                <a href="https://www.xbox.com"
+                                  ><span color="#86d4f8"
+                                    ><b>Take a place</b></span
+                                  ></a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="https://intl.garena.com/" target="_blank">
+                      <figure
+                        class="paint-image"
+                        style="
+                          background: url('img/Garena.png') no-repeat center
+                            center / cover;
+                          align-content: center;
+                        "
+                      >
+                        <br />
+                        <h1
+                          style="
+                            color: red;
+                            font-size: 50px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            font-weight: 900;
+                          "
+                        >
+                          <span>
+                            <b>Garena</b>
+                          </span>
+                        </h1>
+                      </figure>
+                    </a>
+                  </div>
+                </div>
+                <br />
+                <div class="trending">
+                  <div class="gameForums">
+                    <div class="container">
+                      <div class="btn">
+                        <a
+                          href="https://www.epicgames.com/site/en-US/home"
+                          target="_blank"
+                          ><span><b>Epic Games</b></span></a
+                        >
+                      </div>
+                      <div class="btn">
+                        <a href="https://forums.pcgamer.com/" target="_blank"
+                          ><span><b>PC Gamer</b></span></a
+                        >
+                      </div>
+                      <div class="btn">
+                        <a
+                          href="https://www.reddit.com/r/Games/"
+                          target="_blank"
+                          ><span><b>Reddit</b></span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="fire-bubble-art d-flex justify-content-between">
+                <style>
+                  .gameWebsites {
+                    width: 100%;
+                    height: 100%;
+                  }
+                  .gameWebsites img {
+                    height: 100%;
+                  }
+                </style>
+                <div class="gameWebsites">
+                  <div class="buy1">
+                    <a href="https://www.razer.com/" target="_blank"
+                      ><img src="img/ryzer.png" alt="ryzer"
+                    /></a>
+                  </div>
+                  <div class="buy2">
+                    <a
+                      href="https://support.roccat.com/s/software-downloads?language=en_US"
+                      target="_blank"
+                      ><img src="img/rocat.png" alt="rocat"
+                    /></a>
+                  </div>
+                  <div class="buy3">
+                    <a href="https://steelseries.com/" target="_blank">
+                      <img src="img/steel%20series.png" alt="ss"
+                    /></a>
+                  </div>
+                  <div class="buy4">
+                    <a href="https://www.gunnar.com/" target="_blank"
+                      ><img src="img/gunnar.png" alt="gunnar"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="trending-grid">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="trending-content">
+                      <img
+                        src="img/BlueStacks-5.jpg"
+                        alt="card-images"
+                        class="img-fluid"
+                      />
+                      <div class="trending-desc">
+                        <h4 class="user-title">Games Emulator</h4>
+                        <h3 class="user-position">Blue Stacks 5</h3>
+                        <div class="gameForums">
+                          <div class="container">
+                            <div class="gameForums">
+                              <div class="btn">
+                                <a
+                                  href="https://www.bluestacks.com/download.html"
+                                >
+                                  <font color="#86d4f8"><b>Download</b></font>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <img
+                          src="img/bluestacks.png"
+                          alt="img-fluid"
+                          class="user-image"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="trending-content">
+                      <img
+                        src="img/msi%20bg7.jpg"
+                        alt="card-images"
+                        class="img-fluid"
+                      />
+                      <div class="trending-desc">
+                        <h4 class="user-title">Games Emulator #1</h4>
+                        <h3 class="user-position">MSI</h3>
+                        <div class="gameForums">
+                          <div class="container">
+                            <div class="gameForums">
+                              <div class="btna">
+                                <div class="btn">
+                                  <a href=" https://msiappplayer.com/download/">
+                                    <font color="#86d4f8"><b>Download</b></font>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <img
+                          src="img/msi.png"
+                          alt="img-fluid"
+                          class="user-image"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="trending-content">
+                      <img
+                        src="img/ld player bg.jpg"
+                        alt="card-images"
+                        class="img-fluid"
+                      />
+                      <div class="trending-desc">
+                        <h4 class="user-title">Games Emulator</h4>
+                        <h3 class="user-position">LDPlayer</h3>
+                        <div class="gameForums">
+                          <div class="container">
+                            <div class="gameForums">
+                              <div class="btna">
+                                <div class="btn" id="ldPlayer">
+                                  <style>
+                                    #ldPlayer::before,
+                                    #ldPlayer::before {
+                                      background: #f5c51c;
+                                      box-shadow: 0 0 5px #f5c51c,
+                                        0 0 15px #f5c51c, 0 0 30px #f5c51c,
+                                        0 0 60px #f5c51c;
+                                    }
+                                  </style>
+                                  <a
+                                    href="https://www.ldplayer.net/download/install"
+                                  >
+                                    <font color="#86d4f8"><b>Download</b></font>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <img
+                          src="img/ldplayer-logo.webp"
+                          alt="img-fluid"
+                          class="user-image"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <footer>
+          <h6>
+            <a href="./footer/about-us.html" target="_blank">About Us</a>
+            |
+            <a href="./footer/privacy-policy.html" target="_blank"
+              >Privacy Policy</a
+            >
+            <!-- TODO: MAIL -->
+            | <a href="#"> Contact</a>
+          </h6>
+          <div class="social-container">
+            <ul class="social-icons">
+              <li>
+                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <h6>
+            &COPY; 2024 -
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </h6>
+        </footer>
+      </div>
+    </div>
+    <script src="loader.js"></script>
+  </body>
+</html>
